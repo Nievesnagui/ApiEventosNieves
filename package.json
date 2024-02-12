@@ -1,0 +1,43 @@
+{
+  "name": "apieventosnieves",
+  "version": "1.0.0",
+  "description": "Api Eventos de Nieves",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ./dist/app.js",
+    "build": "./node_modules/.bin/tsc -w",
+    "start": "./node_modules/.bin/nodemon ./dist/app.js",
+    "sync": "rsync -avz --delete src/views/ dist/views/ && rsync -avz --delete src/public/ dist/public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nievesnagui/ApiEventosNieves.git"
+  },
+  "keywords": [
+    "node",
+    "MongoDB",
+    "Node",
+    "typescript",
+    "appWeb",
+    "DWES"
+  ],
+  "author": "Nieves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nievesnagui/ApiEventosNieves/issues"
+  },
+  "homepage": "https://github.com/Nievesnagui/ApiEventosNieves#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.8",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "nodemon": "^3.0.2",
+    "save-dev": "^0.0.1-security"
+  }
+}
